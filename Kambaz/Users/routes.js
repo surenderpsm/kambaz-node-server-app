@@ -91,6 +91,5 @@ export default function UserRoutes(app) {
     //app.put("/api/users/:userId", updateUser);
 }
 
-export default UserRoutes;
 
 
