@@ -11,12 +11,12 @@ import EnrollmentRoutes from './Kambaz/Enrollments/routes.js';
 import AssignmentRoutes from './Kambaz/Assignments/routes.js';
 const app = express();
 app.use(cors());
-app.use(
-    cors({
-        credentials: true,
-        origin: process.env.NETLIFY_URL || "http://localhost:5176",
-    })
-);
+// app.use(
+//     cors({
+//         credentials: true,
+//         origin: process.env.NETLIFY_URL || "http://localhost:5176",
+//     })
+// );
  // make sure cors is used right after creating the app
 const sessionOptions = {
     secret: process.env.SESSION_SECRET || "kambaz",
